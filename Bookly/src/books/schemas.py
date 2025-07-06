@@ -1,5 +1,10 @@
 from pydantic import BaseModel
 
+
+class BookCreateModel(BaseModel):
+    title : str
+    author : str
+
 class Book(BaseModel):
     id:int
     title:str
